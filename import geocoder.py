@@ -10,7 +10,7 @@ location_info = get_localization(myip)
 
 print('country', location_info.country)
 print('city', location_info.city)
-print('latitude, longitude', location_info.latng[0], location_info.latlng[1])
+print('latitude, longitude', location_info.latlng[0], location_info.latlng[1])
 
 coordinate = [location_info.latlng[0], location_info.latlng[1]]
 myloc = folium.Map(location=coordinate, zoom_start=14, popup='My Location')
